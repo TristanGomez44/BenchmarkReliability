@@ -1,0 +1,37 @@
+{
+  "Baseline": {},
+  "FP": {
+    "loss_on_masked": true,
+    "sal_metr_mask": true
+  },
+  "AP": {
+    "adv_ce_weight": 1
+  },
+  "FL": {
+    "focal_weight": 1,
+    "nll_weight": 0
+  },
+  "FP+AP": {
+    "loss_on_masked":true,
+    "sal_metr_mask":true,
+    "adv_ce_weight":1
+  },
+  "FL+FP": {
+    "focal_weight": 1,
+    "nll_weight": 0,
+    "loss_on_masked":true,
+    "sal_metr_mask":true       
+  },
+  "FL+AP": {
+    "focal_weight": 1,
+    "nll_weight": 0,
+    "adv_ce_weight": 1        
+  },
+  "FL+FP+AP": {
+    "focal_weight": 1,
+    "nll_weight": 0,    
+    "loss_on_masked":true,
+    "sal_metr_mask":true,
+    "adv_ce_weight": 1        
+  }
+}
